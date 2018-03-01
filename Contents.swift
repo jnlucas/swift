@@ -205,6 +205,19 @@ calculate(a: 2, b: 3, operation:{$0+$1*$0 })
 calculate(a: 2, b: 3){$0+$1*$0 }
 
 
+//utilizando array map
+var names = [
+"maria"
+,"joao"
+,"jose"
+]
+
+var bizzaro = names.map({$0.uppercased()})
+print(bizzaro)
+
+
+
+
 
 
 
