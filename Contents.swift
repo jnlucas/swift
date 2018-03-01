@@ -205,15 +205,26 @@ calculate(a: 2, b: 3, operation:{$0+$1*$0 })
 calculate(a: 2, b: 3){$0+$1*$0 }
 
 
-//utilizando array map
+//utilizando array map closure
 var names = [
 "maria"
 ,"joao"
 ,"jose"
+,"joseja"
 ]
 
 var bizzaro = names.map({$0.uppercased()})
 print(bizzaro)
+
+//utiliazando array filter
+var endA = names.filter({$0.hasSuffix("a")})
+print(endA.sorted())
+
+
+
+
+
+
 
 
 
